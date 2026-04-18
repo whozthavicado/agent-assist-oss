@@ -85,6 +85,7 @@ Current backend demo features:
 - generate summaries
 - generate CRM-ready notes
 - run single-message and batch demos
+- run basic automated tests
 
 Manual demo:
 
@@ -115,6 +116,10 @@ See [backend/README.md](backend/README.md) for backend details.
 
 `python backend/api.py`
 
+### Run the tests
+
+`python -m unittest backend/test_demo_assist.py`
+
 ### Test the API
 
 Health check:
@@ -141,6 +146,7 @@ agent-assist-oss/
 │  ├─ demo_assist.py
 │  ├─ run_batch_demo.py
 │  ├─ api.py
+│  ├─ test_demo_assist.py
 │  ├─ test_messages.json
 │  └─ sample_request.json
 ├─ frontend/
@@ -148,13 +154,13 @@ agent-assist-oss/
 │  ├─ architecture.md
 │  ├─ roadmap.md
 │  ├─ use-cases.md
-│  └─ vision.md
+│  ├─ vision.md
+│  └─ examples.md
 ├─ examples/
 │  └─ objection-handling-demo.md
 ├─ datasets/
 │  └─ synthetic-call-examples.json
 └─ screenshots/
-
 ```
 
 ## Current project status
@@ -173,6 +179,8 @@ The current repository includes:
 - a batch test runner
 - a minimal local API
 - a sample API request payload
+- automated backend tests
+- practical workflow examples
 - a simple objection-handling example
 
 ## Documentation
@@ -181,6 +189,7 @@ The current repository includes:
 - [Roadmap](docs/roadmap.md)
 - [Use Cases](docs/use-cases.md)
 - [Vision](docs/vision.md)
+- [Practical Examples](docs/examples.md)
 - [Backend Demo](backend/README.md)
 - [Example Demo](examples/objection-handling-demo.md)
 - [Contributing](CONTRIBUTING.md)
