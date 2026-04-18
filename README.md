@@ -70,6 +70,28 @@ Help agents detect payment intent signals, handle refusal patterns, and improve 
 ### QA
 Help reviewers generate structured summaries and identify quality signals more efficiently.
 
+## Backend demo
+
+The repository already includes a simple rule-based backend prototype.
+
+Current backend demo features:
+
+- detect common conversation signals
+- generate suggested replies
+- generate summaries
+- generate CRM-ready notes
+- run single-message and batch demos
+
+Manual demo:
+
+`python backend/demo_assist.py`
+
+Batch demo:
+
+`python backend/run_batch_demo.py`
+
+See [backend/README.md](backend/README.md) for backend details.
+
 ## Project structure
 
 ```text
@@ -78,16 +100,22 @@ agent-assist-oss/
 ├─ CONTRIBUTING.md
 ├─ .gitignore
 ├─ backend/
+│  ├─ README.md
+│  ├─ demo_assist.py
+│  ├─ run_batch_demo.py
+│  └─ test_messages.json
 ├─ frontend/
 ├─ docs/
 │  ├─ architecture.md
 │  ├─ roadmap.md
-│  └─ use-cases.md
+│  ├─ use-cases.md
+│  └─ vision.md
 ├─ examples/
 │  └─ objection-handling-demo.md
 ├─ datasets/
 │  └─ synthetic-call-examples.json
 └─ screenshots/
+
 ```
 
 ## Current project status
@@ -100,7 +128,10 @@ The current repository includes:
 - initial architecture
 - use cases
 - roadmap
+- vision
 - a first synthetic dataset
+- a simple backend prototype
+- a batch test runner
 - a simple objection-handling example
 
 ## Documentation
@@ -108,6 +139,8 @@ The current repository includes:
 - [Architecture](docs/architecture.md)
 - [Roadmap](docs/roadmap.md)
 - [Use Cases](docs/use-cases.md)
+- [Vision](docs/vision.md)
+- [Backend Demo](backend/README.md)
 - [Example Demo](examples/objection-handling-demo.md)
 - [Contributing](CONTRIBUTING.md)
 
