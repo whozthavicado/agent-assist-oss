@@ -1,10 +1,18 @@
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent))
 
-from demo_assist import analyze_message, detect_signals, normalize_text, suggest_reply
+from demo_assist import (
+    analyze_message,
+    detect_signals,
+    load_signal_rules,
+    normalize_text,
+    suggest_reply,
+)
 
 
 class DemoAssistTests(unittest.TestCase):
@@ -43,6 +51,34 @@ class DemoAssistTests(unittest.TestCase):
         result = analyze_message("Thanks, I just wanted to confirm the hours.")
         self.assertEqual(result["detected_signals"], [])
         self.assertIn("No strong predefined signals", result["summary"])
+
+    def test_load_signal_rules_from_external_file(self):
+        custom_rules = {
+            "budget_question": ["need a lower price", "can you lower the price"],
+            "language_switch": ["háblame en español"]
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            rules_path = Path(temp_dir) / "custom_rules.json"
+            rules_path.write_text(json.dumps(custom_rules), encoding="utf-8")
+
+            loaded_rules = load_signal_rules(rules_path)
+
+        self.assertIn("budget_question", loaded_rules)
+        self.assertIn("language_switch", loaded_rules)
+        self.assertIn("need a lower price", loaded_rules["budget_question"])
+
+    def test_detect_signals_with_custom_rules(self):
+        custom_rules = {
+            "budget_question": ["need a lower price"],
+        }
+
+        signals = detect_signals(
+            "I need a lower price before I move forward.",
+            signal_rules=custom_rules,
+        )
+
+        self.assertEqual(signals, ["budget_question"])
 
 
 if __name__ == "__main__":
