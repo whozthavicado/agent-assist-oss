@@ -1,0 +1,32 @@
+[
+  {
+    "id": "call_001",
+    "channel": "phone",
+    "team": "sales",
+    "customer_message": "It's too expensive. I need to think about it.",
+    "detected_signals": ["price_objection", "hesitation"],
+    "suggested_reply": "I understand. Would it help if I explain the value more clearly or show an option that fits your budget better?",
+    "summary": "Customer showed interest but hesitated because of price.",
+    "crm_note": "Price objection raised. Customer asked for time to think."
+  },
+  {
+    "id": "call_002",
+    "channel": "phone",
+    "team": "support",
+    "customer_message": "I've already explained this twice and nothing has changed.",
+    "detected_signals": ["frustration", "repeat_issue", "escalation_risk"],
+    "suggested_reply": "I understand your frustration. Let me take ownership of this and summarize the issue clearly so we can move faster.",
+    "summary": "Customer is frustrated due to repeated unresolved issue.",
+    "crm_note": "Customer reported repeated issue and frustration. Escalation risk present."
+  },
+  {
+    "id": "call_003",
+    "channel": "phone",
+    "team": "collections",
+    "customer_message": "I can't pay today. Maybe next week.",
+    "detected_signals": ["payment_delay", "uncertain_commitment"],
+    "suggested_reply": "Understood. What day next week would be most realistic for you so I can note it correctly?",
+    "summary": "Customer could not pay today and suggested a possible delay until next week.",
+    "crm_note": "Customer unable to pay today. Possible follow-up next week."
+  }
+]
