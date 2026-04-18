@@ -88,3 +88,51 @@ agent-assist-oss/
 ├─ datasets/
 │  └─ synthetic-call-examples.json
 └─ screenshots/
+```
+## Current project status
+
+This is an early-stage open-source project.
+
+The current repository includes:
+
+- project documentation
+- initial architecture
+- use cases
+- roadmap
+- a first synthetic dataset
+- a simple objection-handling example
+
+## Documentation
+
+- [Architecture](docs/architecture.md)
+- [Roadmap](docs/roadmap.md)
+- [Use Cases](docs/use-cases.md)
+- [Example Demo](examples/objection-handling-demo.md)
+- [Contributing](CONTRIBUTING.md)
+
+## Long-term vision
+
+Build a practical open-source foundation for agent-assist systems that can later connect to:
+
+- voice pipelines
+- chat workflows
+- CRM systems
+- QA processes
+- multiple LLM providers
+
+## Contributing
+
+Contributions are welcome, especially in:
+
+- documentation
+- synthetic datasets
+- prompt design
+- backend logic
+- frontend prototypes
+- workflow ideas based on real agent operations
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## License
+
+Apache License 2.0
