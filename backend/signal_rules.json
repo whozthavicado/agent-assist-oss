@@ -1,0 +1,83 @@
+{
+  "price_objection": [
+    "too expensive",
+    "too much",
+    "expensive",
+    "very expensive",
+    "costs too much",
+    "price is too high",
+    "muy caro",
+    "caro"
+  ],
+  "hesitation": [
+    "i need to think about it",
+    "i'll think about it",
+    "let me think",
+    "maybe later",
+    "not sure yet",
+    "lo voy a pensar",
+    "déjame pensarlo",
+    "dejame pensarlo"
+  ],
+  "info_request": [
+    "send me the information",
+    "send me info",
+    "send me details",
+    "can you send me details",
+    "mandame informacion",
+    "mándame información",
+    "enviame informacion",
+    "envíame información"
+  ],
+  "not_interested": [
+    "not interested",
+    "i'm not interested",
+    "no thanks",
+    "no thank you",
+    "not right now",
+    "no me interesa"
+  ],
+  "frustration": [
+    "this is frustrating",
+    "i'm frustrated",
+    "nothing has changed",
+    "i already explained this",
+    "explained this twice",
+    "this makes no sense",
+    "estoy frustrado",
+    "ya expliqué esto",
+    "ya explique esto"
+  ],
+  "repeat_issue": [
+    "again",
+    "still happening",
+    "nothing has changed",
+    "already explained this twice",
+    "same problem",
+    "same issue",
+    "otra vez",
+    "sigue pasando",
+    "mismo problema"
+  ],
+  "payment_delay": [
+    "i can't pay today",
+    "maybe next week",
+    "i can pay later",
+    "not today",
+    "next week",
+    "no puedo pagar hoy",
+    "tal vez la próxima semana",
+    "la proxima semana"
+  ],
+  "uncertain_commitment": [
+    "maybe",
+    "probably",
+    "i guess",
+    "not sure",
+    "perhaps",
+    "tal vez",
+    "quizá",
+    "quizas",
+    "no estoy seguro"
+  ]
+}
