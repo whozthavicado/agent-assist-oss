@@ -120,6 +120,10 @@ See [backend/README.md](backend/README.md) for backend details.
 
 `python -m unittest backend/test_demo_assist.py`
 
+### Continuous integration
+
+GitHub Actions runs the backend test suite automatically on pushes and pull requests to `main`.
+
 ### Test the API
 
 Health check:
@@ -180,6 +184,7 @@ The current repository includes:
 - a minimal local API
 - a sample API request payload
 - automated backend tests
+- a GitHub Actions test workflow
 - practical workflow examples
 - a simple objection-handling example
 
