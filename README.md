@@ -55,6 +55,7 @@ Initial scope:
 ## Example use cases
 
 ### Sales
+
 Help agents respond to objections such as:
 
 - "It's too expensive."
@@ -62,12 +63,15 @@ Help agents respond to objections such as:
 - "Send me the information."
 
 ### Support
+
 Help teams summarize issues faster and keep notes more consistent.
 
 ### Collections
+
 Help agents detect payment intent signals, handle refusal patterns, and improve follow-up structure.
 
 ### QA
+
 Help reviewers generate structured summaries and identify quality signals more efficiently.
 
 ## Backend demo
@@ -92,6 +96,39 @@ Batch demo:
 
 See [backend/README.md](backend/README.md) for backend details.
 
+## Quick start
+
+### Requirements
+
+- Python 3.10 or newer recommended
+- No external dependencies required for the current backend demo
+
+### Run the manual demo
+
+`python backend/demo_assist.py`
+
+### Run the batch demo
+
+`python backend/run_batch_demo.py`
+
+### Run the local API
+
+`python backend/api.py`
+
+### Test the API
+
+Health check:
+
+`curl http://127.0.0.1:8000/health`
+
+Analyze a message:
+
+`curl -X POST http://127.0.0.1:8000/analyze -H "Content-Type: application/json" -d "{\"message\":\"It's too expensive. I need to think about it.\"}"`
+
+You can also use the sample payload in:
+
+`backend/sample_request.json`
+
 ## Project structure
 
 ```text
@@ -103,7 +140,9 @@ agent-assist-oss/
 │  ├─ README.md
 │  ├─ demo_assist.py
 │  ├─ run_batch_demo.py
-│  └─ test_messages.json
+│  ├─ api.py
+│  ├─ test_messages.json
+│  └─ sample_request.json
 ├─ frontend/
 ├─ docs/
 │  ├─ architecture.md
@@ -132,6 +171,8 @@ The current repository includes:
 - a first synthetic dataset
 - a simple backend prototype
 - a batch test runner
+- a minimal local API
+- a sample API request payload
 - a simple objection-handling example
 
 ## Documentation
