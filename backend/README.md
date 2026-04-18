@@ -11,6 +11,8 @@ This folder contains the first backend prototype for agent-assist-oss.
   - CRM-ready notes
 - `run_batch_demo.py`: runs the same logic on a small test set
 - `test_messages.json`: sample customer messages for batch testing
+- `api.py`: minimal local HTTP API for message analysis
+- `sample_request.json`: example request payload for the API
 
 ## Why this exists
 
@@ -28,9 +30,18 @@ Batch demo:
 
 `python backend/run_batch_demo.py`
 
-## Example input
+Local API:
 
-`It's too expensive. I need to think about it.`
+`python backend/api.py`
+
+## API routes
+
+- `GET /health`
+- `POST /analyze`
+
+## Example request body
+
+`{"message": "It's too expensive. I need to think about it."}`
 
 ## Example output
 
@@ -47,4 +58,4 @@ Possible next backend improvements:
 - score conversation quality
 - support configurable rules
 - add prompt-based LLM mode
-- expose a simple API
+- expose a more complete API
