@@ -2,13 +2,15 @@
 
 This folder contains the first backend prototype for agent-assist-oss.
 
-## Current file
+## Current files
 
 - `demo_assist.py`: a simple rule-based prototype that detects basic conversation signals and generates:
   - detected signals
   - suggested replies
   - summaries
   - CRM-ready notes
+- `run_batch_demo.py`: runs the same logic on a small test set
+- `test_messages.json`: sample customer messages for batch testing
 
 ## Why this exists
 
@@ -18,7 +20,13 @@ The goal is to validate the workflow and structure before adding more advanced l
 
 ## How to run
 
+Manual demo:
+
 `python backend/demo_assist.py`
+
+Batch demo:
+
+`python backend/run_batch_demo.py`
 
 ## Example input
 
@@ -35,7 +43,7 @@ The goal is to validate the workflow and structure before adding more advanced l
 
 Possible next backend improvements:
 
-- load examples from dataset files
+- load larger datasets
 - score conversation quality
 - support configurable rules
 - add prompt-based LLM mode
