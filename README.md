@@ -140,6 +140,24 @@ You can also use the sample payload in:
 
 `backend/sample_request.json`
 
+## Demo screenshots
+
+### Manual demo
+
+![Manual demo](screenshots/manual-demo-terminal.png)
+
+### Batch demo
+
+![Batch demo](screenshots/batch-demo-terminal.png)
+
+### API health check
+
+![API health check](screenshots/api-health-terminal.png)
+
+### API analyze response
+
+![API analyze response](screenshots/api-analyze-terminal.png)
+
 ## Project structure
 
 ```text
@@ -170,7 +188,11 @@ agent-assist-oss/
 ├─ datasets/
 │  └─ synthetic-call-examples.json
 └─ screenshots/
-   └─ README.md
+   ├─ README.md
+   ├─ manual-demo-terminal.png
+   ├─ batch-demo-terminal.png
+   ├─ api-health-terminal.png
+   └─ api-analyze-terminal.png
 ```
 
 ## Current project status
@@ -194,7 +216,7 @@ The current repository includes:
 - API endpoint tests
 - a GitHub Actions test workflow
 - practical workflow examples
-- a screenshot capture guide
+- real demo screenshots
 - a changelog
 - a simple objection-handling example
 
