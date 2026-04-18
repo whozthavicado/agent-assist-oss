@@ -9,8 +9,9 @@ This folder contains the first backend prototype for agent-assist-oss.
   - suggested replies
   - summaries
   - CRM-ready notes
+- `signal_rules.json`: configurable signal detection rules loaded by the backend demo
 - `run_batch_demo.py`: runs the same logic on a small test set
-- `test_demo_assist.py`: unit tests for the rule-based backend logic
+- `test_demo_assist.py`: unit tests for the rule-based backend logic and rule loading
 - `test_api.py`: tests for the local API endpoints and input validation
 - `test_messages.json`: sample customer messages for batch testing
 - `api.py`: minimal local HTTP API for message analysis
@@ -40,6 +41,16 @@ Run tests:
 
 `python -m unittest discover -s backend -p "test_*.py"`
 
+## Configurable rules
+
+The backend now loads signal rules from:
+
+`backend/signal_rules.json`
+
+This makes it easier to extend signals, keywords, and language coverage without editing the core logic every time.
+
+If the rules file is missing or invalid, the backend falls back to the built-in default rules.
+
 ## API routes
 
 - `GET /health`
@@ -66,6 +77,6 @@ Possible next backend improvements:
 
 - load larger datasets
 - score conversation quality
-- support configurable rules
+- support more configurable workflow layers
 - add prompt-based LLM mode
 - expose a more complete API
