@@ -1,22 +1,20 @@
 # Screenshots
 
-This folder is reserved for visual demo assets for agent-assist-oss.
+This folder contains visual demo assets for agent-assist-oss.
 
-## Suggested assets
-
-Add screenshots or short GIFs that show:
-
-- the manual backend demo running in the terminal
-- the batch demo output
-- the local API health check
-- a sample API analysis response
-
-## Naming suggestions
+## Current assets
 
 - `manual-demo-terminal.png`
 - `batch-demo-terminal.png`
 - `api-health-terminal.png`
 - `api-analyze-terminal.png`
+
+## What they show
+
+- the manual backend demo running in the terminal
+- the batch demo output
+- the local API health check
+- a sample API analysis response
 
 ## Why this matters
 
