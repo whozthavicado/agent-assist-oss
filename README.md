@@ -144,6 +144,7 @@ You can also use the sample payload in:
 agent-assist-oss/
 ├─ README.md
 ├─ CONTRIBUTING.md
+├─ CHANGELOG.md
 ├─ .gitignore
 ├─ backend/
 │  ├─ README.md
@@ -165,6 +166,7 @@ agent-assist-oss/
 ├─ datasets/
 │  └─ synthetic-call-examples.json
 └─ screenshots/
+   └─ README.md
 ```
 
 ## Current project status
@@ -186,6 +188,8 @@ The current repository includes:
 - automated backend tests
 - a GitHub Actions test workflow
 - practical workflow examples
+- a screenshot capture guide
+- a changelog
 - a simple objection-handling example
 
 ## Documentation
@@ -197,6 +201,8 @@ The current repository includes:
 - [Practical Examples](docs/examples.md)
 - [Backend Demo](backend/README.md)
 - [Example Demo](examples/objection-handling-demo.md)
+- [Screenshot Guide](screenshots/README.md)
+- [Changelog](CHANGELOG.md)
 - [Contributing](CONTRIBUTING.md)
 
 ## Long-term vision
