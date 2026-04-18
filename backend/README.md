@@ -10,7 +10,8 @@ This folder contains the first backend prototype for agent-assist-oss.
   - summaries
   - CRM-ready notes
 - `run_batch_demo.py`: runs the same logic on a small test set
-- `test_demo_assist.py`: basic unit tests for the current backend logic
+- `test_demo_assist.py`: unit tests for the rule-based backend logic
+- `test_api.py`: tests for the local API endpoints and input validation
 - `test_messages.json`: sample customer messages for batch testing
 - `api.py`: minimal local HTTP API for message analysis
 - `sample_request.json`: example request payload for the API
@@ -37,7 +38,7 @@ Local API:
 
 Run tests:
 
-`python -m unittest backend/test_demo_assist.py`
+`python -m unittest discover -s backend -p "test_*.py"`
 
 ## API routes
 
