@@ -84,6 +84,7 @@ Current backend demo features:
 - generate suggested replies
 - generate summaries
 - generate CRM-ready notes
+- load configurable signal rules from an external file
 - run single-message and batch demos
 - run backend unit tests
 - validate API endpoint behavior
@@ -150,6 +151,7 @@ agent-assist-oss/
 ├─ backend/
 │  ├─ README.md
 │  ├─ demo_assist.py
+│  ├─ signal_rules.json
 │  ├─ run_batch_demo.py
 │  ├─ api.py
 │  ├─ test_demo_assist.py
@@ -184,6 +186,7 @@ The current repository includes:
 - vision
 - a first synthetic dataset
 - a simple backend prototype
+- configurable signal rules from an external file
 - a batch test runner
 - a minimal local API
 - a sample API request payload
