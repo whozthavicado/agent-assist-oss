@@ -18,5 +18,25 @@ The goal is to validate the workflow and structure before adding more advanced l
 
 ## How to run
 
-```bash
-python backend/demo_assist.py
+`python backend/demo_assist.py`
+
+## Example input
+
+`It's too expensive. I need to think about it.`
+
+## Example output
+
+- detected signals: `price_objection`, `hesitation`
+- suggested reply
+- summary
+- CRM note
+
+## Next steps
+
+Possible next backend improvements:
+
+- load examples from dataset files
+- score conversation quality
+- support configurable rules
+- add prompt-based LLM mode
+- expose a simple API
