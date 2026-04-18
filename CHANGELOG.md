@@ -10,10 +10,12 @@ The format is inspired by Keep a Changelog, adapted for the current stage of the
 
 - initial project documentation, architecture, roadmap, use cases, and vision
 - rule-based backend demo for signal detection and reply generation
+- configurable external signal rules file for easier extension
 - batch runner for sample test messages
 - minimal local HTTP API for message analysis
 - sample request payload for API testing
 - backend unit tests
+- API endpoint tests
 - practical workflow examples
 - GitHub Actions workflow for automated backend tests
 - issue templates and pull request template
