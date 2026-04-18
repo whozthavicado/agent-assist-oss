@@ -1,0 +1,22 @@
+[
+  {
+    "id": "msg_001",
+    "message": "It's too expensive. I need to think about it."
+  },
+  {
+    "id": "msg_002",
+    "message": "Can you send me the information first?"
+  },
+  {
+    "id": "msg_003",
+    "message": "I've already explained this twice and nothing has changed."
+  },
+  {
+    "id": "msg_004",
+    "message": "I can't pay today. Maybe next week."
+  },
+  {
+    "id": "msg_005",
+    "message": "I'm not interested right now."
+  }
+]
