@@ -85,7 +85,8 @@ Current backend demo features:
 - generate summaries
 - generate CRM-ready notes
 - run single-message and batch demos
-- run basic automated tests
+- run backend unit tests
+- validate API endpoint behavior
 
 Manual demo:
 
@@ -118,7 +119,7 @@ See [backend/README.md](backend/README.md) for backend details.
 
 ### Run the tests
 
-`python -m unittest backend/test_demo_assist.py`
+`python -m unittest discover -s backend -p "test_*.py"`
 
 ### Continuous integration
 
@@ -152,6 +153,7 @@ agent-assist-oss/
 │  ├─ run_batch_demo.py
 │  ├─ api.py
 │  ├─ test_demo_assist.py
+│  ├─ test_api.py
 │  ├─ test_messages.json
 │  └─ sample_request.json
 ├─ frontend/
@@ -186,6 +188,7 @@ The current repository includes:
 - a minimal local API
 - a sample API request payload
 - automated backend tests
+- API endpoint tests
 - a GitHub Actions test workflow
 - practical workflow examples
 - a screenshot capture guide
